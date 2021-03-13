@@ -1,18 +1,5 @@
 console.log('client side javascript....')
 
-// fetch('http://localhost:3000/weather?address=kolkata').then((response) => {
-//     response.json().then((data) => {
-//         if (data.error) {
-//             console.log(data.error)
-//         } else {
-//             console.log(data.forecast)
-//             console.log(data.temperature)
-//             console.log(data.feelslike)
-//             console.log(data.address)
-//         }
-
-//     })
-// })
 
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
