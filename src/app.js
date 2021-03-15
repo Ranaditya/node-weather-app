@@ -5,6 +5,8 @@ const geocode = require('./util/geocode')
 const forecast = require('./util/forecast')
 const { response } = require('express')
 
+const port = process.env.PORT || 3000
+
 //create the express application
 const app = express()
 
@@ -100,6 +102,6 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log('Server has started on port ', 3000)
+app.listen(port, () => {
+    console.log('Server has started on port ', port)
 })
