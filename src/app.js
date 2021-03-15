@@ -68,14 +68,16 @@ app.get('/weather', (req, res) => {
                         error: error
                     })
                 } else {
-                    const { weather_descriptions, temperature, feelslike } = data.current
+                    const { weather_descriptions, temperature, feelslike, humidity, cloudcover } = data.current
                     console.log('Weather condition is ' + weather_descriptions[0])
                     console.log('Current temp is ', temperature, 'but feels like ', feelslike)
                     return res.status(200).send({
                         forecast: weather_descriptions[0],
                         temperature: temperature,
                         feelslike: feelslike,
-                        address: address
+                        address: address,
+                        humidity: humidity,
+                        cloudcover: cloudcover
                     })
                 }
             })

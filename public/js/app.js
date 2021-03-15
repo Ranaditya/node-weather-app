@@ -26,7 +26,7 @@ weatherForm.addEventListener('submit', (e) => {
                 console.log(data.feelslike)
                 console.log(data.address)
                 weatherText1.textContent = 'Forecast for ' + data.address + ' : ' + data.forecast
-                weatherText2.textContent = 'Temperature is ' + data.temperature + ', feels like ' + data.feelslike
+                weatherText2.textContent = 'Temperature is ' + data.temperature + ', feels like ' + data.feelslike + ', humidity is ' + data.humidity + ' with cloud cover ' + data.cloudcover
             }
         })
     })
